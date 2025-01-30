@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calcul Mental De Soustraction</title>
+        <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
+    </head>
+    <body>
+        <h1>Calcul Mental De Soustraction</h1>
+        
+        <p>calculez la soustraction des nombres et saisissez dans le champ réponse.</p>
+        <div class="cell-5">
+            <div class="form-group">
+                <input type="text" data-role="input" data-prepend="Nombre A:" id="nombreA" readonly>
+            </div>
+            <div class="form-group">-</div>
+            <div class="form-group">
+                <input type="text" data-role="input" data-prepend="Nombre B:" id="nombreB" readonly>
+            </div>
+            <div class="form-group">=</div>
+            <div class="form-group">
+                <input type="text" data-role="input" data-prepend="Réponse:" id="reponse">
+            </div>
+            <div class="form-group">
+                <input class="pure-button" type="button" id="repondre" value="repondre" onclick="repondre()">
+                <input class="pure-button" type="button" id="relancer" value="relancer" onclick="init()">
+            </div>
+            <div class="form-group">
+                <div id="preussite">Réussite</div>
+                <div data-role="progress" id="progression" data-type="buffer" datavalue="0" data-buffer="0"></div>
+            </div>
+            <div id="result-container"></div>
+        </div>
+
+        <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
+        <script src="soustraction.js"></script>
+    </body>
+</html>
